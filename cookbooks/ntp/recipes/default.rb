@@ -15,6 +15,6 @@ template '/etc/ntp.conf' do
   group   'root'
 end
 
-service 'ntp' do
+service 'ntpd' do
   action  [:enable, :start]
 end
