@@ -2,7 +2,7 @@
 # Cookbook name:: motd
 # Recipe:: default
 # Copyright (c) 2015 Nonsense
-file '/etc/motd' do
+template '/etc/motd' do
   action  :create
   source  'motd.erb'
   mode    '0644'
