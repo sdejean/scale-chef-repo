@@ -8,7 +8,7 @@ package 'ntp'
 package 'ntpdate'
 
 template '/etc/ntp.conf' do
-  action  :create
+  action  :create_if_missing
   source  'ntp.conf.erb'
   mode    '0644'
   owner   'root'
