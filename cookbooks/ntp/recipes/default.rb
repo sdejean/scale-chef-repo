@@ -14,3 +14,7 @@ template '/etc/ntp.conf' do
   owner   'root'
   group   'root'
 end
+
+service 'ntp' do
+  action  [:enable, :start]
+end
