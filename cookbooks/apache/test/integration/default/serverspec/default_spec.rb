@@ -9,8 +9,12 @@ describe 'apache::default' do
     expect(package('httpd')).to be_installed
   end
 
-  if 'is running' do
+  it 'is running' do
     expect(service('httpd')).to be_enabled
     expect(service('httpd')).to be_running
+  end
+
+  it 'is listening' do
+    expect(port(80)).to be_listening
   end
 end
