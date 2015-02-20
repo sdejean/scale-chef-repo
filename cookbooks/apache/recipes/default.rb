@@ -6,7 +6,7 @@
 
 package_name = 'httpd'
 
-package "#{package_name}"
+package package_name
 package "#{package_name}-tools"
 
 service 'httpd' do
