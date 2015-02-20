@@ -6,7 +6,7 @@ describe 'motd::default' do
   # http://serverspec.org/resource_types.html
   
   it 'check contents' do
-    expect(file('/etc/motd')).to match /Propert of Sharktopus/
+    expect(file('/etc/motd')).to contain 'Propert of Sharktopus'
   end
 
 end
