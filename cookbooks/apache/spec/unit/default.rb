@@ -9,3 +9,4 @@ describe 'apache::default' do
     expect(chef_run).to install_package('httpd')
     expect(chef_run).to install_package('httpd-tools')
   end
+end
